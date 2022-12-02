@@ -8,7 +8,7 @@
             while (flag)
             {
                 Console.WriteLine("\nEnter your choice \n1.Fibonacci Series \n2.Perfect Number " +
-                    "\n3.Prime Number \n4.Reverse Number \n5.Stop Watch \n6.Coupon Number \n7.Exit");
+                    "\n3.Prime Number \n4.Reverse Number \n5.Stop Watch \n6.Coupon Number \n7.Day Of Week \n8.Exit");
                 Console.WriteLine("\nEnter option to execute");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -35,6 +35,9 @@
                         break;
                     case 6:
                         CouponNumber.GenerateCoupons(10);
+                        break;
+                    case 7:
+                        DayOfWeek.DayofWeek();
                         break;
                     default:
                         flag = false;
